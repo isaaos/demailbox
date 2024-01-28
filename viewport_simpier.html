@@ -1,0 +1,359 @@
+<html lang="ja" data-arp-injected="true"><head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# product: http://ogp.me/ns/product#">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="eccube-csrf-token" content="eIjsstPrLw89rFtKp9qiA3iDIQMrMN2MsT0IIre3DvA">
+    <title>MYページ/カード情報編集 | デメル・ジャパン株式会社</title>
+                        <meta name="robots" content="noindex">
+            <link rel="icon" href="/shop/html/user_data/assets/img/common/favicon.ico">
+    <link rel="apple-touch-icon" href="/shop/html/user_data/assets/img/common/shortcut.png">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.typekit.net/hzq6njf.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css">
+    <link rel="stylesheet" href="/shop/html/template/demel/assets/css/style.css">
+        <script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script><script type="text/javascript" async="" src="https://www.googletagmanager.com/gtag/js?id=UA-18213496-1&amp;l=dataLayer&amp;cx=c"></script><script async="" src="https://www.googletagmanager.com/gtm.js?id=GTM-T7B9RX6"></script><script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script><script type="text/javascript" async="" src="https://www.googletagmanager.com/gtag/js?id=G-DT3MZPR24W&amp;l=dataLayer&amp;cx=c"></script><script async="" src="https://www.googletagmanager.com/gtm.js?id=GTM-T7B9RX6"></script><script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script>
+        $(function() {
+            $.ajaxSetup({
+                'headers': {
+                    'ECCUBE-CSRF-TOKEN': $('meta[name="eccube-csrf-token"]').attr('content')
+                }
+            });
+        });
+    </script>
+                    <!-- ▼GA -->
+
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-18213496-1"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+	  gtag('config', 'UA-18213496-1');
+
+	  	</script>
+        <!-- ▲GA -->
+    <!-- ▼Google Tag Manager ヘッダー -->
+            <!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-T7B9RX6');</script>
+<!-- End Google Tag Manager -->
+        <!-- ▲Google Tag Manager ヘッダー -->
+
+                <link rel="stylesheet" href="/shop/html/template/demel/assets/css/switch.css">
+    <link rel="stylesheet" href="/shop/html/user_data/assets/css/customize.css">
+<meta http-equiv="origin-trial" content="AymqwRC7u88Y4JPvfIF2F37QKylC04248hLCdJAsh8xgOfe/dVJPV3XS3wLFca1ZMVOtnBfVjaCMTVudWM//5g4AAAB7eyJvcmlnaW4iOiJodHRwczovL3d3dy5nb29nbGV0YWdtYW5hZ2VyLmNvbTo0NDMiLCJmZWF0dXJlIjoiUHJpdmFjeVNhbmRib3hBZHNBUElzIiwiZXhwaXJ5IjoxNjk1MTY3OTk5LCJpc1RoaXJkUGFydHkiOnRydWV9"></head>
+<body id="page_gmo_mypage_card_edit" class="mypage load">
+        <!-- ▼Google Tag Manager ボディー -->
+            <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T7B9RX6"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+        <!-- ▲Google Tag Manager ボディー -->
+
+
+<div class="ec-layoutRole">
+
+
+
+    <div class="ec-layoutRole__contents">
+
+
+        <div class="ec-layoutRole__main">
+
+                        <script src="https://static.mul-pay.jp/ext/js/token.js"></script>
+<script type="text/javascript">
+  function bindData(CardSeq, CardNo, Expire, HolderName) {
+    var Expire = Expire.match(/.{1,2}/g);
+
+    $("#mypage_card_card_name1").val(HolderName);
+    $("#mypage_card_expire_month").val(Expire[1]);
+    $("#mypage_card_expire_year").val(Expire[0]);
+    $("#mypage_card_CardSeq").val(CardSeq);
+    $("#mypage_card_card_no").val('');
+
+    $("#cardSeq").show();
+
+    return false;
+  }
+
+  // GMO-PG との通信完了後に呼び出される
+  function execPurchase(response) {
+    if (response.resultCode != 000) {
+      window.alert("カード登録処理中にエラーが発生しました");
+      window.location.assign(window.location.href);
+      return;
+    }
+
+    // クレジットトークンをセット
+    $('#mypage_card_token').val(response.tokenObject.token);
+    // クレジットカードをクリアする
+    $('#mypage_card_card_no').val('');
+
+    $('#form1').submit();
+  }
+
+  // 入力内容のチェックとトークン取得
+  function getToken() {
+    var cardno = $('#mypage_card_card_no').val();
+    if (cardno == "") {
+      alert("※ カード番号が入力されていません。");
+      $('#mypage_card_card_no').focus();
+      return false;
+    }
+
+    // カード番号の数値のみチェック
+    var pat = /^\d*$/;
+    if (!pat.test(cardno)) {
+      alert("※ カード番号は数値で入力してください。");
+      $('#mypage_card_card_no').focus();
+      return false;
+    }
+
+    // カード番号の7桁未満チェック
+    if (cardno.length < 7) {
+      alert("※ カード番号は7桁以上を入力してください。");
+      $('#mypage_card_card_no').focus();
+      return false;
+    }
+
+    var date = new Date();
+    var year = date.getFullYear();
+    year = String(year);
+    year = year.substring(0,2);
+    var expire = year + $('#mypage_card_expire_year').val()
+                      + $('#mypage_card_expire_month').val();
+
+    var holdername = $('#mypage_card_card_name1').val();
+    if (holdername == "") {
+      alert("※ カード名義人が入力されていません。");
+      $('#mypage_card_card_name1').focus();
+      return false;
+    }
+    // 名義人の文字種チェック
+    var pat = /^[0-9a-zA-Z ]*$/;
+    if (!pat.test(holdername)) {
+      alert("※ カード名義人は半角英数で入力してください。");
+      $('#mypage_card_card_name1').focus();
+      return false;
+    }
+
+    $('.ec-inlineBtn').attr('disabled', true);
+
+    Multipayment.init("9200001923297");
+    Multipayment.getToken({
+      cardno: cardno,
+      expire: expire,
+      securitycode: '',
+      holdername: holdername
+    }, execPurchase);
+
+    return false;
+  }
+
+  $(function () {
+    // 番号を読み取り専用に設定する
+    var elem = document.getElementById('mypage_card_CardSeq');
+    elem.readOnly = true;
+
+    // 選択したカードを削除
+    $('#delete_card_action').on('click', function () {
+      if (!$('input:checkbox[name^="delete_card_seq"]:checked').length) {
+        alert("削除するカードを選択してください。");
+        return false;
+      }
+
+      $('.ec-inlineBtn').attr('disabled', true);
+
+      $('#form1').attr('action', "https://demel.co.jp/shop/mypage/gmo_card_edit/delete");
+      $('#form1').submit();
+
+      return false;
+    });
+
+    // 入力内容を保存
+    $('#save_card_action').on('click', function () {
+      // クレジットトークンを取得
+      return getToken();
+    });
+  });
+</script>
+<style type="text/css">
+  .ec-cardRole__actions {
+    margin-bottom: 30px;
+  }
+  .ec-halfInput input[type='tel'],
+  .ec-halfInput input[type='text'] {
+    display: block;
+    width: 45%;
+    margin-bottom: 0;
+  }
+  #mypage_card_CardSeq {
+    width: 20%;
+  }
+  .cardNoCaution {
+    color: red;
+  }
+</style>
+<div class="ec-layoutRole__main">
+
+
+  <form id="form1" name="form1" method="post" action="http://127.0.0.1:33714/return_post_data">
+    <input type="hidden" id="mypage_card__token" name="mypage_card[_token]" value="5cmkjo_tC-m2rsMd0BoOHgXt8SGHb2emQHyVGSXY_Sw">
+
+    <div class="ec-mypageRole">
+      <div class="ec-cardRole">
+
+	      </div>
+    </div>
+
+        <div class="ec-mypageRole">
+      <div class="ec-off1Grid">
+        <div class="ec-off1Grid__cell">
+          <div class="ec-cardRole">
+                        <p class="ec-para-normal">登録されているカード情報はありません。</p>
+                      </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="ec-mypageRole">
+      <div class="ec-off1Grid">
+        <div class="ec-off1Grid__cell">
+          <div class="ec-cardRole">
+            <div class="ec-borderedDefs">
+              <dl>
+                <dt>
+                  <label class="ec-label" for="mypage_card_card_no">カード番号</label>
+                </dt>
+                <dd>
+                  <div class="ec-halfInput">
+                    <input type="tel" id="mypage_card_card_no" name="mypage_card[card_no]" minlength="12" maxlength="16" autocomplete="off" pattern="\d*" class="form-control">
+                    <span class="cardNoCaution">※変更時、カード番号は再入力が必要です。</span>
+
+                    <input type="hidden" id="mypage_card_token" name="mypage_card[token]">
+                  </div>
+                </dd>
+              </dl>
+
+              <dl>
+                <dt>
+                  <label class="ec-label required" for="mypage_card_expire_month">有効期限</label>
+                </dt>
+                <dd>
+                  <div class="ec-select">
+                    <select id="mypage_card_expire_month" name="mypage_card[expire_month]" class="form-control"><option value="01">01</option><option value="02">02</option><option value="03">03</option><option value="04">04</option><option value="05">05</option><option value="06">06</option><option value="07">07</option><option value="08">08</option><option value="09">09</option><option value="10">10</option><option value="11">11</option><option value="12">12</option></select>月 / 20
+                    <select id="mypage_card_expire_year" name="mypage_card[expire_year]" class="form-control"><option value="24">24</option><option value="25">25</option><option value="26">26</option><option value="27">27</option><option value="28">28</option><option value="29">29</option><option value="30">30</option><option value="31">31</option><option value="32">32</option><option value="33">33</option><option value="34">34</option><option value="35">35</option><option value="36">36</option><option value="37">37</option><option value="38">38</option><option value="39">39</option></select>年
+
+
+                  </div>
+                </dd>
+              </dl>
+
+              <dl>
+                <dt>
+                  <label class="ec-label" for="mypage_card_card_name1">名義人</label>
+                </dt>
+                <dd>
+                  <div class="ec-halfInput">
+                    <input type="text" id="mypage_card_card_name1" name="mypage_card[card_name1]" maxlength="50" class="form-control">
+                    <span>※「Mr.」等の敬称は入力不要です。</span>
+
+                  </div>
+                </dd>
+              </dl>
+
+              <dl id="cardSeq" style="display:none">
+                <dt>
+                  <label class="ec-label" for="mypage_card_CardSeq">番号</label>
+                </dt>
+                <dd>
+                  <div class="ec-halfInput">
+                    <input type="text" id="mypage_card_CardSeq" name="mypage_card[CardSeq]" class="form-control" readonly="">
+
+                  </div>
+                </dd>
+              </dl>
+            </div>
+
+            <div class="ec-cardRole__actions">
+              <a id="save_card_action" class="ec-inlineBtn" href="#">入力内容を保存</a>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </form>
+</div>
+
+                                </div>
+
+                    </div>
+
+
+
+    </div><!-- ec-layoutRole -->
+
+<div class="ec-overlayRole"></div>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
+<script>
+var eccube_lang = {
+    "common.delete_confirm":"削除してもよろしいですか?"
+}
+</script><script src="/shop/html/template/demel/assets/js/function.js"></script>
+<script src="/shop/html/template/demel/assets/js/eccube.js"></script>
+                <script>
+    $(function () {
+        // ナビ最下部に移動
+        $('#gmo_payment_gateway_card_edit_navi').appendTo($('div.ec-navlistRole > ul'));
+    });
+</script>
+
+
+
+    <script src="/shop/html/user_data/assets/js/customize.js"></script>
+
+
+<script>
+(function() {
+  var ws = new WebSocket('ws://' + window.location.host +
+             '/jb-server-page?reloadMode=RELOAD_ON_SAVE&'+
+             'referrer=' + encodeURIComponent(window.location.pathname));
+  ws.onmessage = function (msg) {
+      if (msg.data === 'reload') {
+          window.location.reload();
+      }
+      if (msg.data.startsWith('update-css ')) {
+          var messageId = msg.data.substring(11);
+          var links = document.getElementsByTagName('link');
+          for (var i = 0; i < links.length; i++) {
+              var link = links[i];
+              if (link.rel !== 'stylesheet') continue;
+              var clonedLink = link.cloneNode(true);
+              var newHref = link.href.replace(/(&|\?)jbUpdateLinksId=\d+/, "$1jbUpdateLinksId=" + messageId);
+              if (newHref !== link.href) {
+                clonedLink.href = newHref;
+              }
+              else {
+                var indexOfQuest = newHref.indexOf('?');
+                if (indexOfQuest >= 0) {
+                  // to support ?foo#hash
+                  clonedLink.href = newHref.substring(0, indexOfQuest + 1) + 'jbUpdateLinksId=' + messageId + '&' +
+                                    newHref.substring(indexOfQuest + 1);
+                }
+                else {
+                  clonedLink.href += '?' + 'jbUpdateLinksId=' + messageId;
+                }
+              }
+              link.replaceWith(clonedLink);
+          }
+      }
+  };
+})();
+</script></body></html>
