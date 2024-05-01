@@ -126,12 +126,7 @@
 </defs>
 </svg>
 <div id="wrapper">
-    <header id="header">
-
-        <!-- ▲ヘッダーMENU -->
-
-                                                    <p id="btn_menu"><a class="nav-trigger" href="#nav">Menu<span></span></a></p>
-        </header></div>
+    </div>
 
 
     <div id="contents" class="theme_main_only">
@@ -186,7 +181,7 @@
 
 
 <script src="https://www.google.com/recaptcha/api.js"></script>
-<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>  <h2 class="heading01">登録カード一覧</h2>
   <div class="container-fluid">
     <div class="row" style="padding-bottom: 0px;">
       <div class="col-md-1"></div>
@@ -204,7 +199,7 @@
       <div class="col-md-10">
 
         <form name="form1" id="form1" method="post" action="http://127.0.0.1:8000/echo">
-          <input type="hidden" id="my_page_regist_credit__token" name="my_page_regist_credit[_token]" value="wMfRzB7GdbEF_YbTwDxuCnLR28VPFVZ8h6lo9y9YWgc">
+          <input type="hidden" id="my_page_regist_credit__token" name="my_page_regist_credit[_token]" value="HLYRCRr4abGKZcUBk9d359-Bhr0F7uYyqzoMpEVbVQc">
           <div class="dl_table">
             <dl>
               <dt>
@@ -291,7 +286,7 @@
 
 
             <dl>
-              <dt><a id="addCard" href="#" onclick="doPurchase(); return false;" class="btn btn-default" style="margin-top: 20px;">入力内容を保存</a></dt>
+              <dt><a id="addCard" href="#" onclick="doPurchase(); return false;" class="btn btn-default" style="margin-top: 20px;" disabled="">入力内容を保存</a></dt>
             </dl>
 
           </div>
@@ -329,90 +324,11 @@
 
         </div>
 
-        <footer id="footer">
-                                                            <!-- ▼hidden_category -->
 
-<script>
-    jQuery("#headCatList").append(jQuery("#hiddenCatList").html());
-     jQuery("#headListBtn").hover(function(e){ jQuery("#headCatList").addClass("open") },function(){    });
-     jQuery("#headCatList").mouseleave(function(){ jQuery("#headCatList").removeClass("open"); });
-    jQuery("body").click(function(){ jQuery("#headCatList").removeClass("open"); });
-
-    jQuery(document).ready(function(){
-            setTimeout(function(){jQuery("#drawer .member_link").append(jQuery("#hiddenCatList").html())},1000);
-    });
-
-</script>
-
-                <!-- ▲hidden_category -->
-    <!-- ▼フッター -->
-
-
-
-        <div id="pagetop" class="btn btn-info btn-lg" style="display: none;"><a href="#top"><i class="fa fa-chevron-up"></i></a></div>
-<script>
-jQuery(function() {
-	var pagetop = jQuery('#pagetop');
-	pagetop.hide();
-	jQuery(window).scroll(function () {
-		if (jQuery(this).scrollTop() > 500) {
-			pagetop.fadeIn();
-		} else {
-			pagetop.fadeOut();
-		}
-	});
-	pagetop.click(function () {
-		jQuery('body,html').animate({
-			scrollTop: 0
-		}, 400);
-		return false;
-	});
-});
-
-</script>
-        <!-- ▲フッター -->
-    <!-- ▼GoogleAnalytics -->
-                            <!-- &#2013266049;&#2013266085;GoogleAnalytics&#2013266049;&#2013266085; -->
-    <script>
-                    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-            })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-            ga('create', 'UA-31914957-1', 'auto');
-            ga('send', 'pageview');
-            </script>
-    <!-- &#2013266049;&#2013266083;GoogleAnalytics&#2013266049;&#2013266083; -->
-
-                <!-- ▲GoogleAnalytics -->
-
-
-        </footer>
 
     </div>
 
-    <div id="drawer" class="drawer sp">
-    <div id="search" class="search">
-        <form method="get" id="searchform" action="/products/list">
-            <div class="search_inner">
 
-
-
-            </div>
-
-
-        </form>
-    </div><div id="search" class="search">
-        <form method="get" id="searchform" action="/products/list">
-            <div class="search_inner">
-
-
-
-            </div>
-
-
-        </form>
-    </div></div>
 
 
 
@@ -570,24 +486,15 @@ $(function () {
 
         Multipayment.init("9101588253812");
         Multipayment.getToken(
-            {
-                cardno: cardno,
-                expire: expire,
-                securitycode: '',
-                holdername: holdername
-            }, execPurchase
+          {
+            cardno: cardno,
+            expire: expire,
+            securitycode: '',
+            holdername: holdername
+          }, execPurchase
         );
-    }
+  }
   </script>
 
 
-<div style="background-color: rgb(255, 255, 255); border: 1px solid rgb(204, 204, 204); box-shadow: rgba(0, 0, 0, 0.2) 2px 2px 3px; position: absolute; transition: visibility 0s linear 0.3s, opacity 0.3s linear 0s; opacity: 0; visibility: hidden; z-index: 2000000000; left: 0px; top: -10000px;">
-    <div style="width: 100%; height: 100%; position: fixed; top: 0px; left: 0px; z-index: 2000000000; background-color: rgb(255, 255, 255); opacity: 0.05;"></div>
-    <div class="g-recaptcha-bubble-arrow" style="border: 11px solid transparent; width: 0px; height: 0px; position: absolute; pointer-events: none; margin-top: -11px; z-index: 2000000000;"></div>
-    <div class="g-recaptcha-bubble-arrow" style="border: 10px solid transparent; width: 0px; height: 0px; position: absolute; pointer-events: none; margin-top: -10px; z-index: 2000000000;"></div>
-    <div style="z-index: 2000000000; position: relative;">
-        <iframe title="recaptcha challenge expires in two minutes" name="c-9jro3suxa67w" frameborder="0" scrolling="no" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox allow-storage-access-by-user-activation" src="https://www.google.com/recaptcha/api2/bframe?hl=en&amp;v=V6_85qpc2Xf2sbe3xTnRte7m&amp;k=6LdgApYaAAAAABNXtRfAQTpo4fGMy1yGnL0VzSrD" style="width: 100%; height: 100%;"></iframe>
-    </div>
-</div>
-
-</body></html>
+<div style="background-color: rgb(255, 255, 255); border: 1px solid rgb(204, 204, 204); box-shadow: rgba(0, 0, 0, 0.2) 2px 2px 3px; position: absolute; transition: visibility 0s linear 0.3s, opacity 0.3s linear 0s; opacity: 0; visibility: hidden; z-index: 2000000000; left: 0px; top: -10000px;"><div style="width: 100%; height: 100%; position: fixed; top: 0px; left: 0px; z-index: 2000000000; background-color: rgb(255, 255, 255); opacity: 0.05;"></div><div class="g-recaptcha-bubble-arrow" style="border: 11px solid transparent; width: 0px; height: 0px; position: absolute; pointer-events: none; margin-top: -11px; z-index: 2000000000;"></div><div class="g-recaptcha-bubble-arrow" style="border: 10px solid transparent; width: 0px; height: 0px; position: absolute; pointer-events: none; margin-top: -10px; z-index: 2000000000;"></div><div style="z-index: 2000000000; position: relative;"><iframe title="recaptcha challenge expires in two minutes" name="c-5v5nykv6pmiu" frameborder="0" scrolling="no" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox allow-storage-access-by-user-activation" src="https://www.google.com/recaptcha/api2/bframe?hl=en&amp;v=V6_85qpc2Xf2sbe3xTnRte7m&amp;k=6LdgApYaAAAAABNXtRfAQTpo4fGMy1yGnL0VzSrD" style="width: 100%; height: 100%;"></iframe></div></div></body></html>
