@@ -1,0 +1,645 @@
+<html lang="ja"><head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# product: http://ogp.me/ns/product#">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="eccube-csrf-token" content="UPg88OXMbM6YHoOCcTbR-c8x6QvtV2WEJjqF7dJEaGg">
+    <title>あそ美心 ONLINE STORE / 商品購入</title>
+                        <meta name="robots" content="noindex">
+            <link rel="icon" href="/html/user_data/assets/img/common/favicon.ico">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css">
+    <link rel="stylesheet" href="/html/template/default/assets/css/style.css">
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script>
+        $(function() {
+            $.ajaxSetup({
+                'headers': {
+                    'ECCUBE-CSRF-TOKEN': $('meta[name="eccube-csrf-token"]').attr('content')
+                }
+            });
+        });
+    </script>
+                    <!-- ▼カスタマイズ用CSS -->
+                <!-- Favicone Icon -->
+    <link rel="shortcut icon" type="image/x-icon" href="/html/user_data/assets/img/common/favicon.ico">
+    <link rel="icon" type="image/png" href="/html/user_data/assets/img/common/favicon.png">
+    <link rel="apple-touch-icon" href="/html/user_data/assets/img/common/favicon.png">
+
+    <!-- CSS -->
+    <link href="/html/user_data/assets/css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="/html/user_data/assets/css/style.css" rel="stylesheet" type="text/css">
+    <link href="/html/user_data/assets/css/font-awesome.css" rel="stylesheet" type="text/css">
+    <!--<link href="css/ionicons.css" rel="stylesheet" type="text/css" />-->
+    <link href="/html/user_data/assets/css/ionicons.min.css" rel="stylesheet" type="text/css">
+    <link href="/html/user_data/assets/css/plugin/animate.css" rel="stylesheet" type="text/css">
+    <link href="/html/user_data/assets/css/jquery-ui.css" rel="stylesheet" type="text/css">
+
+        <!-- ▲カスタマイズ用CSS -->
+    <!-- ▼LightcaseScript -->
+            <link rel="stylesheet" type="text/css" href="/html/template/default/assets/css/lightcase.css">
+<script type="text/javascript" src="/html/template/default/assets/js/lightcase.js"></script>
+<script type="text/javascript">
+	jQuery(document).ready(function($) {
+		$('a[data-rel^=lightcase]').lightcase({
+	        transition: 'fade',
+	        showSequenceInfo: false,
+	        showCaption: false
+        });
+	});
+</script>
+        <!-- ▲LightcaseScript -->
+
+                <link rel="stylesheet" href="/html/user_data/assets/css/customize.css">
+</head>
+<body id="page_shopping" class="other_page" style="overflow: visible;">
+
+<div class="ec-layoutRole">
+                <div class="ec-layoutRole__header">
+                <!-- ▼ヘッダー -->
+            <!-- Header ("header-transparent", "header--sticky")-->
+
+<!-- End Header -->
+        <!-- ▲ヘッダー -->
+
+        </div>
+
+
+    <div class="ec-layoutRole__contents">
+                            <div class="ec-layoutRole__left">
+                    <!-- ▼サイドバー -->
+            <!-- Left Sidebar -->
+
+                    <!-- End Right Sidebar -->
+        <!-- ▲サイドバー -->
+
+            </div>
+
+
+        <div class="ec-layoutRole__mainWithColumn">
+
+
+    <div class="ec-role">
+        <div class="ec-pageHeader">
+            <h1>ご注文手続き</h1>
+        </div>
+    </div>
+
+    <div class="ec-cartRole">
+
+
+        <!-- アラートメッセージ -->
+
+    </div>
+
+    <form id="shopping-form" method="post" action="http://210.231.186.71:8000/echo">
+        <input type="hidden" id="shopping_order__token" name="_shopping_order[_token]" value="rWm0GOh1Q-GlyglHp7I9Gly0PCQzInvBfKomLPJlVKY">
+        <input type="hidden" id="shopping_order_redirect_to" name="_shopping_order[redirect_to]">
+        <div class="ec-orderRole">
+            <div class="ec-orderRole__detail">
+                
+                <div class="ec-orderPayment">
+                    <div class="ec-rectHeading">
+                        <h2>お支払方法</h2>
+                    </div>
+                    <div class="ec-radio">
+                                                    <div style="display: block;">
+                                                                        <input type="radio" id="shopping_order_Payment_5" name="_shopping_order[Payment]" required="required" data-trigger="change" value="5" checked="checked">
+        <label for="shopping_order_Payment_5">
+            <span>クレジット決済</span>
+        </label>
+
+                                                            </div>
+                                                    <div style="display: block;">
+                                                                        <input type="radio" id="shopping_order_Payment_3" name="_shopping_order[Payment]" required="required" data-trigger="change" value="3">
+        <label for="shopping_order_Payment_3">
+            <span>銀行振込</span>
+        </label>
+
+                                                            </div>
+                                            </div>
+                    <div class="ec-input "></div>
+                </div>
+                                <div id="gmo_payment_gateway_credit_form" class="ec-orderPayment">
+    <div class="ec-rectHeading">
+    <h2>        <input type="radio" id="shopping_order_payment_type_0" name="_shopping_order[payment_type]" required="required" value="0" checked="checked">
+        <label for="shopping_order_payment_type_0">
+            <span>クレジットカード決済</span>
+        </label>
+    </h2>
+  </div>
+  <div id="shopping_order_payment_type_0_body">
+        <p>当社がお客様から収集した以下の1及び2記載の情報等は、クレジットカードの発行会社が行う不正利用検知・防止のために、お客様が利用されているクレジットカードの発行会社へ提供させていただきます。<br>
+<br>
+1.お客様情報<br>
+　住所、emailアドレス、会員登録日、会員情報更新日<br>
+<br>
+2.配送先情報<br>
+　配送先住所<br>
+<br>
+お客様が利用されているクレジットカードの発行会社が外国にある場合、これらの情報は当該発行会社が所属する国に移転される場合があります。<br>
+お客様が未成年の場合、親権者または後見人の承諾を得るものとします。<br>
+</p>
+    <br>
+        <div class="dl_table">
+      <dl>
+	<dt>クレジットカード番号</dt>
+	<dd>
+	  <div class="ec-input">
+	    <input type="tel" id="shopping_order_card_no" name="_shopping_order[card_no]" minlength="12" maxlength="16" autocomplete="off" pattern="\d*" class="form-control">
+
+	    <input type="hidden" id="shopping_order_token" name="_shopping_order[token]">
+	    <input type="hidden" id="shopping_order_mask_card_no" name="_shopping_order[mask_card_no]">
+	  </div>
+	</dd>
+      </dl>
+      <dl style="height:50px;">
+	<dt>カード有効期限</dt>
+	<dd>
+	  <div class="ec-select">
+	                <select id="shopping_order_expire_month" name="_shopping_order[expire_month]" class="form-control"><option value="01">01</option><option value="02">02</option><option value="03">03</option><option value="04">04</option><option value="05">05</option><option value="06">06</option><option value="07">07</option><option value="08">08</option><option value="09">09</option><option value="10">10</option><option value="11">11</option><option value="12">12</option></select>
+    月 /20             <select id="shopping_order_expire_year" name="_shopping_order[expire_year]" class="form-control"><option value="24">24</option><option value="25">25</option><option value="26">26</option><option value="27">27</option><option value="28">28</option><option value="29">29</option><option value="30">30</option><option value="31">31</option><option value="32">32</option><option value="33">33</option><option value="34">34</option><option value="35">35</option><option value="36">36</option><option value="37">37</option><option value="38">38</option><option value="39">39</option></select>
+    年
+
+
+	  </div>
+	</dd>
+      </dl>
+      <dl style="height:80px;">
+	<dt>カード名義人名</dt>
+	<dd>
+	  <div class="ec-input inline">
+	    名：<input type="text" id="shopping_order_card_name1" name="_shopping_order[card_name1]" maxlength="25">
+
+	  </div>
+	  <div class="ec-input inline">
+	    姓：<input type="text" id="shopping_order_card_name2" name="_shopping_order[card_name2]" maxlength="24">
+
+	  </div>
+	  <div class="inline">（例：TARO YAMADA）</div>
+	</dd>
+      </dl>
+            <dl style="height:115px;">
+	<dt>セキュリティコード</dt>
+	<dd>
+	  <div class="ec-input">
+	    <input type="tel" id="shopping_order_security_code" name="_shopping_order[security_code]" maxlength="24" class="form-control">（例：123）
+	    <br>
+	    主にカード裏面の署名欄に記載されている末尾３桁～４桁の数字をご記入下さい。
+	  </div>
+	</dd>
+      </dl>
+            <dl style="height:50px;">
+	<dt>支払い方法</dt>
+	<dd>
+	  <div class="ec-select">
+	                <select id="shopping_order_credit_pay_methods" name="_shopping_order[credit_pay_methods]" class="form-control"><option value="1-0">一括払い</option><option value="5-0">リボ払い</option></select>
+
+
+	  </div>
+	</dd>
+      </dl>
+          </div>
+  </div>
+</div><div class="ec-orderConfirm">
+                    <div class="ec-rectHeading">
+                        <h2>お問い合わせ</h2>
+                    </div>
+                    <div class="ec-input">
+                                <textarea id="shopping_order_message" name="_shopping_order[message]" class="form-control-lg" placeholder="お問い合わせ事項がございましたら、こちらにご入力ください。(3000文字まで)" rows="6"></textarea>
+
+
+                    </div>
+                </div>
+            </div>
+            <div class="ec-orderRole__summary" style="margin-top: 1165.02px;">
+                <div class="ec-totalBox">
+                    <dl class="ec-totalBox__spec">
+                        <dt>小計</dt>
+                        <dd class="ec-totalBox__specTotal">￥1,980</dd>
+                    </dl>
+                    <dl class="ec-totalBox__spec">
+                        <dt>手数料</dt>
+                        <dd>￥0</dd>
+                    </dl>
+                    <dl class="ec-totalBox__spec">
+                        <dt>送料</dt>
+                        <dd>￥550</dd>
+                    </dl>
+                    <dl class="ec-totalBox__spec">
+                        <dt>値引き</dt>
+                        <dd>￥0</dd>
+                    </dl>
+                    <div class="ec-totalBox__total">合計<span class="ec-totalBox__price">￥2,530</span><span class="ec-totalBox__taxLabel">税込</span></div>
+                                        <div class="ec-totalBox__btn">
+                        <button type="submit" class="ec-blockBtn--action">確認する</button>
+                        <a href="https://asobigokoro.kyoto/cart" class="ec-blockBtn--cancel">カートに戻る</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+
+                                        <div class="ec-layoutRole__mainBottom">
+                        <!-- ▼おすすめ商品 -->
+
+<!-- ▼item_list▼ -->
+
+<!-- ▲item_list▲ -->
+
+        <!-- ▲おすすめ商品 -->
+
+                </div>
+                    </div>
+
+                    </div>
+
+
+
+    </div><!-- ec-layoutRole -->
+
+<div class="ec-overlayRole"></div>
+<div class="ec-drawerRoleClose"><i class="fas fa-times"></i></div>
+
+<div class="ec-blockTopBtn pagetop" style="display: block;">ページトップへ</div>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
+<script>
+var eccube_lang = {
+    "common.delete_confirm":"削除してもよろしいですか?"
+}
+</script><script src="/html/template/default/assets/js/function.js"></script>
+<script src="/html/template/default/assets/js/eccube.js"></script>
+    <script>
+        $(function() {
+            var $redirectCallback = function() {
+                loadingOverlay();
+                $('#shopping_order_redirect_to').val($(this).attr('data-path'));
+                $('#shopping-form').attr('action', 'https://asobigokoro.kyoto/shopping/redirect_to').submit();
+                setTimeout(function () {
+                    loadingOverlay("hide");
+                }, 2000);
+            };
+            $('[data-trigger]').each(function() {
+                $(this).on($(this).attr('data-trigger'), $redirectCallback);
+            });
+
+                        var edit = $('.customer-edit');
+            var hidden = $('.customer-in');
+            var form = $('.customer-form');
+
+            $('#customer').click(function() {
+                $(edit).each(function(index) {
+                    var name = $(this).text();
+                    var input = $('<input id="edit' + index + '" type="text" />').val(name);
+                    $(form[index]).empty().append(input);
+                });
+
+                $('.non-customer-display').hide();
+                $('.non-customer-edit').show();
+                $('.mod-button').show();
+            });
+
+            $('#customer-ok').click(function() {
+                $(form).each(function(index) {
+                    $(hidden[index]).val($(form[index]).children('input').val());
+                });
+
+                var postData = {};
+                $(hidden).each(function() {
+                    postData[$(this).attr('name')] = $(this).val();
+                });
+
+                loadingOverlay();
+
+                $.ajax({
+                    url: "https://asobigokoro.kyoto/shopping/customer",
+                    type: 'POST',
+                    data: postData,
+                    dataType: 'json'
+                }).done(function(data) {
+                    if (data.status == 'OK') {
+                        $(form).each(function(index) {
+                            $(edit[index]).empty().text($(form[index]).children('input').val());
+                            $(form[index]).empty();
+                        });
+
+                        // kana field
+                        $(edit[2]).empty().text(data.kana01);
+                        $(edit[3]).empty().text(data.kana02);
+                        $('#customer-kana01').val(data.kana01);
+                        $('#customer-kana02').val(data.kana02);
+                    }
+                }).fail(function() {
+                    alert('更新に失敗しました。入力内容を確認してください。');
+                }).always(function(data) {
+                    // overlayを無効
+                    loadingOverlay('hide');
+                });
+
+                $('.non-customer-display').show();
+                $('.non-customer-edit').hide();
+                $('.mod-button').hide();
+            });
+
+            $('#customer-cancel').click(function() {
+                $('.non-customer-display').show();
+                $('.non-customer-edit').hide();
+                $('.mod-button').hide();
+            });
+                    });
+    </script>
+        <!-- ▼カスタマイズ用JS -->
+            <script src="/html/user_data/assets/js/owl.carousel.min.js" type="text/javascript"></script>
+<!--<script type="text/javascript">
+    nav_button = document.getElementsByClassName( "menu-mobile-btn" );
+    nav_wrap = document.getElementsByClassName( "nav-menu" );
+    nav_button[0].onclick = function () {
+        nav_wrap[0].classList.toggle('show-on-mobile');
+    };
+</script>-->
+<script src="/html/user_data/assets/js/theme.js" type="text/javascript"></script>
+<!--<script type="text/javascript">
+    $(document).ready(function(){
+        $('.owl-carousel').owlCarousel();
+    });
+</script>-->
+        <!-- ▲カスタマイズ用JS -->
+
+                          <script src="https://static.mul-pay.jp/ext/js/token.js"></script>
+<script>
+  // 指定文字列長のマスクを生成する
+  function maskString(length) {
+    var mask = "";
+    for (i = 0; i < length; ++i, mask += '*');
+    return mask;
+  }
+
+  // カード番号の末尾３桁を残しマスクする
+  function maskCardNo(cardNo) {
+    if (cardNo.length <= 3) {
+      return cardNo;
+    }
+
+    var mask = maskString(cardNo.length - 3);
+    return mask + cardNo.substr(-3, 3);
+  }
+
+  // セキュリティコードをクリアする
+  function clearSecurityCode() {
+    var securityCode = $('#shopping_order_security_code');
+    if (securityCode.length) {
+      securityCode.val('');
+    }
+  }
+
+  // セキュリティコードをマスクする
+  function maskSecurityCode() {
+    var securityCode = $('#shopping_order_security_code');
+    if (securityCode.length) {
+      var value = securityCode.val();
+      securityCode.val(maskString(value.length));
+    }
+  }
+
+  // GMO-PG との通信完了後に呼び出される
+  function execPurchase(response) {
+    if (response.resultCode != 000) {
+      window.alert("購入処理中にエラーが発生しました");
+      window.location.assign(window.location.href);
+      return;
+    }
+
+    // クレジットトークンをセット
+    $('#shopping_order_token').val(response.tokenObject.token);
+    // マスクされたクレジットカードをセット
+    var cardNo = $('#shopping_order_card_no').val();
+    $('#shopping_order_mask_card_no').val(maskCardNo(cardNo));
+    // クレジットカードをクリアする
+    $('#shopping_order_card_no').val('');
+    // セキュリティコードをマスクする
+    maskSecurityCode();
+
+    $('#shopping-form').submit();
+  }
+
+  // 入力内容のチェックとトークン取得
+  function getToken() {
+    var cardno = $('#shopping_order_card_no').val();
+    if (cardno == "") {
+      alert("※ カード番号が入力されていません。");
+      clearSecurityCode();
+      $('#shopping_order_card_no').focus();
+      return false;
+    }
+
+    // カード番号の数値のみチェック
+    var pat = /^\d*$/;
+    if (!pat.test(cardno)) {
+      alert("※ カード番号は数値で入力してください。");
+      clearSecurityCode();
+      $('#shopping_order_card_no').focus();
+      return false;
+    }
+
+    // カード番号の7桁未満チェック
+    if (cardno.length < 7) {
+      alert("※ カード番号は7桁以上を入力してください。");
+      clearSecurityCode();
+      $('#shopping_order_card_no').focus();
+      return false;
+    }
+
+    var date = new Date();
+    var year = date.getFullYear();
+    year = String(year);
+    year = year.substring(0,2);
+    var expire = year + $('#shopping_order_expire_year').val()
+                      + $('#shopping_order_expire_month').val();
+
+    var card_name1 = $('#shopping_order_card_name1').val();
+    if (card_name1 == "") {
+      alert("※ カード名義人名：名が入力されていません。");
+      clearSecurityCode();
+      $('#shopping_order_card_name1').focus();
+      return false;
+    }
+    // 名義人名：名の文字種チェック
+    var pat = /^[0-9a-zA-Z]*$/;
+    if (!pat.test(card_name1)) {
+      alert("※ カード名義人名：名は半角英数で入力してください。");
+      clearSecurityCode();
+      $('#shopping_order_card_name1').focus();
+      return false;
+    }
+
+    var card_name2 = $('#shopping_order_card_name2').val();
+    if (card_name2 == "") {
+      alert("※ カード名義人名：姓が入力されていません。");
+      clearSecurityCode();
+      $('#shopping_order_card_name2').focus();
+      return false;
+    }
+    // 名義人名：姓の文字種チェック
+    var pat = /^[0-9a-zA-Z]*$/;
+    if (!pat.test(card_name2)) {
+      alert("※ カード名義人名：姓は半角英数で入力してください。");
+      clearSecurityCode();
+      $('#shopping_order_card_name2').focus();
+      return false;
+    }
+
+    var holdername = card_name1.concat(card_name2);
+
+    var securityCode;
+    var security_code = $('#shopping_order_security_code');
+    if (security_code.length == 0 || security_code.val() == "") {
+      if ("1" == "1" &&
+          "0" == "0") {
+        alert("※ セキュリティコードが入力されていません。");
+        security_code.focus();
+        return false;
+      }
+      securityCode = '';
+    } else {
+      // セキュリティコードの数値のみチェック
+      var pat = /^\d*$/;
+      if (!pat.test(security_code.val())) {
+        alert("※ セキュリティコードは数値で入力してください。");
+        clearSecurityCode();
+        security_code.focus();
+        return false;
+      }
+
+      // セキュリティコードの4桁以下チェック
+      if (security_code.val().length > 4) {
+        alert("※ セキュリティコードは4桁以下を入力してください。");
+        clearSecurityCode();
+        security_code.focus();
+        return false;
+      }
+
+      securityCode = security_code.val();
+    }
+
+    Multipayment.init("9200000204212");
+    Multipayment.getToken({
+      cardno: cardno,
+      expire: expire,
+      securitycode: securityCode,
+      holdername: holdername
+    }, execPurchase);
+
+    loadingOverlay();
+
+    return false;
+  }
+
+  $(function () {
+    // クレジット入力フォームをお問い合わせ欄の直前に追加
+    $('#gmo_payment_gateway_credit_form').insertBefore($('#shopping-form > div > div.ec-orderRole__detail > div.ec-orderConfirm'));
+
+    // 注文するボタンクリック時
+    $('#shopping-form > div > div.ec-orderRole__summary > div > div.ec-totalBox__btn > button').on('click', function (e) {
+
+      if ($('#shopping_order_payment_type_0').prop('checked')) {
+        // クレジットカード決済が選択されている場合はトークンを取得
+        return getToken();
+      } else {
+        var val = $('input[name^=select_card_seq]:checked').val();
+        if (typeof val === "undefined") {
+          alert("決済に利用するカードをご選択ください。");
+          return false;
+        }
+        return true;
+      }
+    });
+
+    // クレジットカード決済を選択時
+    $('#shopping_order_payment_type_0').on('click', function (e) {
+      $('#shopping_order_payment_type_0_body').show();
+      $('#shopping_order_payment_type_1_body').hide();
+    });
+    // 登録済みクレジットカード決済を選択時
+    $('#shopping_order_payment_type_1').on('click', function (e) {
+      $('#shopping_order_payment_type_1_body').show();
+      $('#shopping_order_payment_type_0_body').hide();
+    });
+    // 登録済みクレジットカード決済でカードを選択した時
+    $('input[name^=select_card_seq]').on('click', function (e) {
+      $('#shopping_order_CardSeq').val($(this).val());
+    });
+    // 通常／登録済みの選択を復元する
+    $('#shopping_order_payment_type_0').click();
+    // 登録済みのカード選択状況を復元する
+    var card_seq = $('#shopping_order_CardSeq').val();
+    if (card_seq != "") {
+      $('#select_card_seq_' + card_seq).click();
+    }
+  });
+</script>
+<style type="text/css">
+  .align-middle {
+    vertical-align: middle;
+  }
+  #gmo_payment_gateway_credit_form .form-control {
+    width: auto;
+    display: inline-block;
+  }
+  #gmo_payment_gateway_credit_form .dl_table {
+    width: 100%;
+    display: table;
+  }
+  #gmo_payment_gateway_credit_form .dl_table dl {
+    display: table-row;
+  }
+  #gmo_payment_gateway_credit_form .dl_table dt,
+  #gmo_payment_gateway_credit_form .dl_table dd {
+    display: table-cell;
+    font-weight: normal;
+  }
+  #shopping_order_payment_type_0_body dt {
+    width: 30%;
+  }
+  #shopping_order_card_name1,
+  #shopping_order_card_name2 {
+    width: 200px;
+    display: inline-block;
+    margin-bottom: 5px;
+  }
+  #gmo_payment_gateway_credit_form .inline {
+    display: inline-block;
+  }
+  #shopping_order_payment_type_1_body .dl_table {
+    margin-top: 10px;
+  }
+  #shopping_order_payment_type_1_body dl {
+    height: 40px;
+  }
+  #shopping_order_payment_type_1_body dt,
+  #shopping_order_payment_type_1_body dd {
+    border-bottom: 1px dotted #ccc;
+  }
+  .save_card_select {
+    width: 10%;
+  }
+  .save_card_no {
+    width: 35%;
+  }
+  .save_expire {
+    width: 20%;
+  }
+  .save_holder_name {
+    width: 35%;
+  }
+  .save_pay_methods {
+    width: 20%;
+  }
+</style>
+
+
+
+
+    <script src="/html/user_data/assets/js/customize.js"></script>
+
+
+</body></html>
